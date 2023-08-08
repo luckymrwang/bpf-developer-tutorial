@@ -8,7 +8,7 @@
 #define TC_ACT_OK 0
 #define ETH_P_IP 0x0800 /* Internet Protocol packet	*/
 
-/// @tchook {"ifindex":1, "attach_point":"BPF_TC_INGRESS"}
+/// @tchook {"ifindex":2, "attach_point":"BPF_TC_INGRESS"}
 /// @tcopts {"handle":1, "priority":1}
 SEC("tc")
 int tc_ingress(struct __sk_buff *ctx)
